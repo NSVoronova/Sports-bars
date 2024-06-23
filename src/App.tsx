@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import MainLayout from './pages/MainLayout/MainLayout';
 import MainPage from './pages/MainPage/MainPage';
-import DisclaimerPage from './pages/DisclaimerPage/DisclaimerPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage';
 
 function App() {
   return (
@@ -40,10 +40,10 @@ function App() {
           }
         />
         <Route
-          path='/discleimer'
+          path='/privacy-policy'
           element={
             <MainLayout>
-              <DisclaimerPage />
+              <PrivacyPolicyPage />
             </MainLayout>
           }
         />

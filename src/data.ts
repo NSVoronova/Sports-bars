@@ -181,13 +181,13 @@ export const barItems: IBar[] = [
   },
 ];
 
-interface IDisclaimerItems {
+interface IPrivacyPolicyItems {
   id: number;
   title: string;
   content: string[];
 }
 
-export const disclaimerItems: IDisclaimerItems[] = [
+export const PrivacyPolicyItems: IPrivacyPolicyItems[] = [
   {
     id: 1,
     title: 'Política de Privacidad de Maket 2',

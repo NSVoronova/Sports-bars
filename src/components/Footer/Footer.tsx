@@ -47,7 +47,7 @@ const Footer = () => {
         {width > 1100 ? (
           <>
             <StyledPoliticContainer>
-              <Link to='/discleimer'>Política de privacidad</Link>
+              <Link to='/privacy-policy'>Política de privacidad</Link>
             </StyledPoliticContainer>
             <StyledImageContactsContainer>
               <div>
@@ -73,7 +73,7 @@ const Footer = () => {
               </StyledImageContactsContainer>
             </>
             <StyledPoliticContainer>
-              <Link to='/discleimer'>Política de privacidad</Link>
+              <Link to='/privacy-policy'>Política de privacidad</Link>
             </StyledPoliticContainer>
           </>
         )}

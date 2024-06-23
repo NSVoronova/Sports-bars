@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const StyledDiscMain = styled.main`
+export const StyledPrivMain = styled.main`
 margin: 60px 0px 6px;
 `
-export const StyledDiscMainHeader = styled.h2`
+export const StyledPrivMainHeader = styled.h2`
   font-size: 36px;
   font-weight: 700;
   color: red;
@@ -11,7 +11,7 @@ export const StyledDiscMainHeader = styled.h2`
     font-size: 26px;
     }
 `
-export const StyledDiscMainContent = styled.div`
+export const StyledPrivMainContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;

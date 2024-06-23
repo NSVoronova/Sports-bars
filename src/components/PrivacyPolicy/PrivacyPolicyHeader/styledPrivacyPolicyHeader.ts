@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import burger_black from '../../../assets/icons/burger_black.svg';
 import close_black from '../../../assets/icons/close_black.svg';
 
-export const StyledDiscWrapper = styled.div`
+export const StyledPrivWrapper = styled.div`
   max-width: 100%;
   padding: 0px 161px;
   @media (max-width: 1100px) {
@@ -13,7 +13,7 @@ export const StyledDiscWrapper = styled.div`
   }
 `;
 
-export const StyledDiscNav = styled.ul`
+export const StyledPrivNav = styled.ul`
   display: flex;
   justify-content: space-between;
   color: #fff;
@@ -60,7 +60,7 @@ export const StyledBurgerContainer = styled.div<{ $isOpen: boolean }>`
   transition: background-image 0.5s ease-in-out;
 `;
 
-export const StyledDiscBurgerMenu = styled.div<{ $isOpen: boolean }>`
+export const StyledPrivBurgerMenu = styled.div<{ $isOpen: boolean }>`
   position: fixed;
   top: ${(props) => (props.$isOpen ? '0' : '-300px')};
   left: 0;

@@ -27,7 +27,7 @@ const BarReviews: FC<IBarReviewsProps> = ({ reviews }) => {
       <StyledFlexContainer justifyContent='space-between' gap='18px'>
         {width > 933 ? (
           reviews.map((rev) => (
-            <StyledReviewContainer>
+            <StyledReviewContainer key={rev.userName}>
               <StyledUserImage url={rev.userAvatar} />
               <StyledReviewUserName>{rev.userName}</StyledReviewUserName>
               <StyledReviewText>{rev.userFeedback}</StyledReviewText>
@@ -37,7 +37,7 @@ const BarReviews: FC<IBarReviewsProps> = ({ reviews }) => {
           <Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
             {reviews.map((rev) => (
               <SwiperSlide>
-                <StyledReviewContainer>
+                <StyledReviewContainer key={rev.userAvatar}>
                   <StyledUserImage url={rev.userAvatar} />
                   <StyledReviewUserName>{rev.userName}</StyledReviewUserName>
                   <StyledReviewText>{rev.userFeedback}</StyledReviewText>

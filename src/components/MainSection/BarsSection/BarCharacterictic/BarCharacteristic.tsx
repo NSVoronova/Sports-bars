@@ -8,8 +8,8 @@ interface ICharacteristic {
 const BarCharacteristic: FC<ICharacteristic> = ({ chars }) => {
   return (
     <StyledCharList>
-      {chars.map((char) => (
-        <li>{char}</li>
+      {chars.map((char, index) => (
+        <li key={index}>{char}</li>
       ))}
     </StyledCharList>
   );

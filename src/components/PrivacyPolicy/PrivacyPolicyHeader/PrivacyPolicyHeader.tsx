@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { navItems } from '../../../data';
 import {
   StyledBurgerContainer,
-  StyledDiscBurgerMenu,
-  StyledDiscNav,
-} from './styledDisclaimerHeader';
+  StyledPrivBurgerMenu,
+  StyledPrivNav,
+} from './styledPrivacyPolicyHeader';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 
-const DisclaimerHeader = () => {
+const PrivacyPolicyHeader = () => {
   const { width = 0 } = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,19 +18,19 @@ const DisclaimerHeader = () => {
   return (
     <nav>
       {width > 768 && (
-        <StyledDiscNav>
+        <StyledPrivNav>
           {navItems.map((item) => (
             <li key={item.id}>
               <a href={item.link}>{item.name}</a>
             </li>
           ))}
-        </StyledDiscNav>
+        </StyledPrivNav>
       )}
 
       {width < 769 && (
         <>
           <StyledBurgerContainer $isOpen={isOpen} onClick={toggleMenu} />
-          <StyledDiscBurgerMenu $isOpen={isOpen}>
+          <StyledPrivBurgerMenu $isOpen={isOpen}>
             <ul>
               {navItems.map((item) => (
                 <li key={item.id}>
@@ -38,11 +38,11 @@ const DisclaimerHeader = () => {
                 </li>
               ))}
             </ul>
-          </StyledDiscBurgerMenu>
+          </StyledPrivBurgerMenu>
         </>
       )}
     </nav>
   );
 };
 
-export default DisclaimerHeader;
+export default PrivacyPolicyHeader;

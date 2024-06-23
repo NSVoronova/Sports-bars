@@ -26,7 +26,6 @@ const BarsSection = () => {
 
   const toggleOpen = (index: number) => {
     setOpenReviewIndex(index === openReviewIndex ? null : index);
-    console.log(openReviewIndex);
   };
 
   return (
